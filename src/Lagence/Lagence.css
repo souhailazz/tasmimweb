@@ -1,0 +1,228 @@
+/* General Styles */
+.agence-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.agence-hero {
+  color: var(--text-light);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.agence-hero-content h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin-bottom: 20px;
+}
+
+.agence-hero-content p {
+  font-size: clamp(16px, 2vw, 18px);
+  margin-bottom: 40px;
+}
+
+.agence-hero-btn {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-speed) ease;
+}
+
+.agence-hero-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Services and Portfolio Sections */
+.agence-services,
+.agence-portfolio {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.agence-services h2,
+.agence-portfolio h2 {
+  font-size: clamp(28px, 4vw, 36px);
+  margin-bottom: 40px;
+}
+
+.agence-services-grid,
+.agence-portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.agence-service-item,
+.agence-portfolio-item {
+  background-color: rgba(255, 255, 255, 0.015);
+  padding: 40px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: var(--text-light);
+  background-size: cover;
+  background-position: center;
+  transition: transform var(--transition-speed) ease, 
+              background-color var(--transition-speed) ease;
+  cursor: pointer;
+}
+
+.agence-service-item:hover,
+.agence-portfolio-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.agence-service-item img,
+.agence-portfolio-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.agence-contact {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+.agence-contact h2 {
+  font-size: clamp(28px, 4vw, 36px);
+  margin-bottom: 20px;
+}
+
+.agence-contact p {
+  font-size: clamp(16px, 2vw, 18px);
+  margin-bottom: 40px;
+}
+
+.agence-contact-btn {
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition-speed) ease;
+}
+
+.agence-contact-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Timeline Section */
+.agence-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 50px 0;
+  padding: 60px 20px;
+  overflow-x: auto;
+}
+
+.agence-timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #1a237e, #3f51b5, #e91e63, #ff9800);
+  z-index: -2;
+}
+
+.agence-timeline-step {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  transition: transform var(--transition-speed) ease;
+  flex: 0 0 auto;
+  margin-right: 40px;
+}
+
+.agence-timeline-step:last-child {
+  margin-right: 0;
+}
+
+.agence-timeline-step:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.timeline-icon-container {
+  position: relative;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+}
+
+.agence-timeline-step:nth-child(1) .timeline-icon-container {
+  background: #1a237e;
+}
+
+.agence-timeline-step:nth-child(2) .timeline-icon-container {
+  background: #3f51b5;
+}
+
+.agence-timeline-step:nth-child(3) .timeline-icon-container {
+  background: #e91e63;
+}
+
+.agence-timeline-step:nth-child(4) .timeline-icon-container {
+  background: #ff9800;
+}
+
+.agence-timeline-label {
+  font-size: 14px;
+  color: #333;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.timeline-icon {
+  font-size: 24px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .agence-timeline {
+    padding: 40px 10px;
+  }
+
+  .agence-timeline-step {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .agence-services-grid, .agence-portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .agence-service-item, .agence-portfolio-item {
+    width: auto;
+    min-height: 150px;
+  }
+}
+

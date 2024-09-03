@@ -1,0 +1,117 @@
+.process-diagram {
+    font-family: 'Helvetica Neue', sans-serif; /* Changed font */
+    max-width: 900px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners for the diagram */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+.body{
+    background-color: #000000;
+}
+
+.process-title {
+    color: #ffffff; /* Darker title color */
+    font-size: 28px; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px; /* Increased margin */
+}
+.process-title:hover { /* Fixed selector by removing the space */
+    font-size: 30px; /* Increased font size */
+    transition: font-size 0.3s ease, color 0.4s ease; /* Combined transitions */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px; 
+    color: #14343a; /* Set color on hover */
+}
+
+.timeline {
+    position: relative;
+    padding-left: 50px; /* Increased padding for better spacing */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px; /* Adjusted for better alignment */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Thicker line */
+    background-color: #3498db; /* Changed line color */
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 40px; /* Increased margin */
+}
+
+.step-number {
+    width: 40px; /* Size of the step number */
+    height: 40px; /* Size of the step number */
+    border-radius: 50%;
+    background-color: #254a71;
+    border: 5px solid #3498db; /* Border color */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    font-weight: bold;
+    margin-right: 20px; /* Space between number and content */
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s, transform 0.3s; /* Transition effects */
+}
+body{
+    background: linear-gradient(135deg, #004080 0%, #2596be 80%);
+}
+
+.step-number:hover {
+    background-color: #3498db; /* Change on hover */
+    color: rgb(0, 0, 0); /* Change text color on hover */
+    transform: scale(1.8); /* Slightly enlarge on hover */
+}
+
+.step-content {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Padding for content */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Shadow effect */
+    color: white;
+    transition: background-color 0.3s; /* Transition for hover */
+    display: flex; /* Flexbox for inner content */
+    flex-direction: column; /* Stack title and description */
+}
+
+.step-content:hover {
+    opacity: 0.9; /* Slightly transparent on hover */
+}
+
+.blue .step-content { background-color: #2980b9; } /* Darker blue */
+.orange .step-content { background-color: #d35400; } /* Darker orange */
+.green .step-content { background-color: #27ae60; } /* Darker green */
+
+.step-title {
+    margin: 0; /* Remove default margin */
+    font-size: 20px; /* Title font size */
+}
+
+.step-description {
+    margin-top: 5px; /* Space between title and description */
+    font-size: 16px; /* Description font size */
+}
+
+.step-icon {
+    display: flex; /* Ensure the icon is centered */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    height: 100px; /* Set a height for the icon container */
+    width: 100px; /* Set a width for the icon container */
+    margin: 0 auto; /* Center the icon container */
+}
+
+.icon {
+    max-width: 50%; /* Limit the icon width to 50% of its container */
+    max-height: 50%; /* Limit the icon height to 50% of its container */
+    object-fit: contain; 
+}

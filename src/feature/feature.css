@@ -1,0 +1,122 @@
+.features-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.feature-item {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 10px;
+    padding: 30px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Start with a small offset */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.iconleft, .iconRight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px; /* Increased width */
+    height: 300px; /* Increased height */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateX(50px); 
+}
+
+.iconleft {
+    left: 0px;
+}
+
+.iconRight {
+    right: 0px;
+}
+
+.iconleft img, .iconRight img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contentleft, .contentRight {
+    flex: 1;
+    opacity: 0; 
+}
+
+.contentleft {
+   margin-left: 200px; 
+   width: 90%;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.contentRight {
+    margin-right: 240px; 
+   width: 90%;
+   text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* In-view class is added when the element is in the viewport */
+.in-view {
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+.in-view .iconleft, .in-view .iconRight {
+    opacity: 1; 
+    transform: translateY(-50%); 
+}
+
+.in-view .contentleft, .in-view .contentRight {
+    opacity: 1; 
+}
+
+.DescriptionText {
+    line-height: 1.6; 
+    text-align: left; 
+    letter-spacing: 0.5px; 
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateX(50px); 
+   
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        padding: 10px;
+    }
+
+    .feature-item {
+        padding: 20px;
+        margin: 5px 0;
+        max-width: 100%;
+        transform: translateY(20px); /* Smaller offset for mobile */
+    }
+
+    .iconleft, .iconRight {
+        width: 80px; /* Further reduced width */
+        height: 80px; /* Further reduced height */
+        transform: translateX(10px); /* Smaller offset for mobile */
+    }
+    .contentleft{
+        margin-left: 60px; 
+    }
+     .contentRight {
+        margin-right: 60px; 
+    }
+
+    .DescriptionText {
+        transform: translateX(10px); /* Smaller offset for mobile */
+        font-size: 0.8em; /* Smaller text size */
+    }
+}

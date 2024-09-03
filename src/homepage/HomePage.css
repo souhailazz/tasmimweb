@@ -1,0 +1,288 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Home Page Styles */
+.home-page {
+  text-align: center;
+  background: linear-gradient(135deg, #004080 0%, #2596be 80%);
+  min-height: 100vh;
+  padding: 80px 20px;
+  scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero-section {
+  margin-bottom: 40px;
+
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0;
+  color: #ffffff;
+}
+
+.hero-subtitle {
+  font-size: 60px;
+  margin: 10px 0;
+  color: #00a8e8;
+}
+
+.hero-description {
+  font-size: 18px;
+ font-weight: 600;
+  margin: 20px auto;
+  max-width: 600px;
+
+}
+
+/* Learn More Button */
+.learn-more-button {
+  background-color: rgba(0, 168, 232, 0.5); /* Adjust opacity here */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 30px;
+  
+}
+
+.learn-more-button span {
+  color: white;
+  opacity: 1; 
+}
+
+
+
+
+
+.learn-more-button:hover {
+  background-color: #007bbf;
+ opacity: 1;
+}
+
+/* Navigation Container and Buttons */
+.nav-container {
+  background: linear-gradient(to right, #1c313e, #213a57);
+  padding: 7px;
+  border-radius: 30px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  border-radius: 60px;
+}
+
+.nav-btn:hover, .nav-btn.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.nav-btn .Icon {
+  display: inline-block;
+  vertical-align: middle; 
+  margin-right: 8px;
+}
+
+.nav-btn .ContainerTiltle {
+  display: inline-block;
+  vertical-align: middle; 
+  color: #ffffff;
+  text-decoration: none;
+  
+}
+
+
+
+
+/* Services Section */
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Service Box */
+.service-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  transition: background-color 0.3s ease;
+}
+
+.service-box:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Other Styles */
+.nav-buttons {
+  background-color: #00a8e8;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nav-buttons:hover {
+  background-color: #007bbf;
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.imagesponsor {
+  width: 80%; 
+  max-width: 80%; 
+  margin-top: -100px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Mobile View */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 40px 10px; /* Reduced padding for smaller screens */
+  }
+
+  .hero-title {
+    font-size: 36px; /* Adjust font size for better readability */
+  }
+
+  .hero-subtitle {
+    font-size: 28px; /* Adjust font size for better readability */
+  }
+
+  .hero-description {
+    font-size: 16px; /* Adjust font size for better readability */
+    margin: 20px auto;
+    max-width: 90%; /* Reduce max width to fit smaller screens */
+  }
+
+  .learn-more-button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 8px 16px; /* Adjust padding */
+    opacity: 50%;
+  }
+
+  .nav-container {
+    padding: 5px; /* Reduce padding */
+    border-radius: 20px; /* Reduce border radius */
+  }
+
+  .nav-btn {
+    padding: 8px 15px; /* Adjust padding */
+    font-size: 14px; /* Adjust font size */
+    margin: 0 3px; /* Reduce margin */
+
+  
+  }
+
+  .services-section {
+    grid-template-columns: 1fr; /* Stack services in a single column */
+    gap: 10px; /* Reduce gap between items */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .imagesponsor {
+    width: 120%; /* Increase width */
+    max-width: 120%; /* Increase max width */
+    margin-top: 20px; /* Add margin top to separate from text */
+  }
+
+  .home-page h3 {
+    font-size: 20px; /* Adjust font size */
+    margin: 20px auto; /* Adjust margin */
+  }
+
+  .Arrowicon {
+    margin-left: 5px;
+   
+  }
+}
+
+.sponsor {
+  display: flex;
+  align-items: center; /* Align items vertically centered */
+   
+}
+
+.arrowhead {
+ 
+  height: 30px; /* Adjusted height for mobile view */
+  margin-bottom: 55px; /* Adjusted margin for mobile view */
+  margin-right: 15px; /* Adjusted margin for mobile view */
+  cursor: pointer;
+  margin-top: 75px; /* Adjusted margin for mobile view */
+
+}
+
+
+.Features-title{
+  font-size:60px;
+}
+
+.Features-subtitle{
+  color: rgb(210, 208, 208);
+}
+
+/* Add these new styles at the end of your CSS file */
+.Features-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.Features-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .Features-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .Features-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Features-subtitle {
+    margin-bottom: 100px; /* Reduce bottom margin */
+  }
+
+  .Features-title {
+    margin-top: 70px; /* Reduce top margin */
+  }
+}

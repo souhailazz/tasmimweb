@@ -1,0 +1,181 @@
+.client-section {
+    padding: 60px 0;
+}
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .heading-container {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .heading-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  
+  .box {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .img-box {
+    margin-bottom: 20px;
+  }
+  
+  .img-box img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .detail-box h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .detail-box p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .carousel-btn-box {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    color: #007bff;
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .client-section {
+      padding: 40px 0;
+    }
+
+    .timeline {
+      left: 20px; 
+    }
+
+    .service-item {
+      padding-left: 40px; 
+    }
+
+    .service-icon {
+      left: 10px;
+    }
+
+    .heading-container {
+      margin-bottom: 30px;
+    }
+
+    .heading-container h2 {
+      font-size: 24px;
+    }
+
+    .box {
+      padding: 20px;
+    }
+
+    .img-box img {
+      max-width: 120px;
+    }
+
+    .detail-box h4 {
+      font-size: 18px;
+    }
+
+    .detail-box p {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .carousel-btn-box {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .client-section {
+      padding: 30px 0;
+    }
+
+    .timeline {
+      left: 15px;
+    }
+
+    .service-item {
+      padding-left: 35px;
+    }
+
+    .service-icon {
+      left: 5px;
+    }
+
+    .heading-container h2 {
+      font-size: 22px;
+    }
+
+    .img-box img {
+      max-width: 100px;
+    }
+
+    .detail-box h4 {
+      font-size: 16px;
+    }
+
+    .detail-box p {
+      font-size: 12px;
+    }
+  }
