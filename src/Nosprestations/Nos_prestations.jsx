@@ -1,6 +1,5 @@
 import React from 'react';
 import './Nos_prestations.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const services = [
   {
@@ -29,15 +28,15 @@ const services = [
 const Nos_prestations = () => {
   return (
     <>
-      <h1 className='title'>Nos Prestations</h1>
-      <div className='services-grid'>
+      <h1 className='prestations-title'>Nos Prestations</h1>
+      <div className='prestations-grid'>
         {services.map((service, index) => (
-          <div className='service-card' key={index}>
-            <div className='service-icon'>
+          <div className='prestations-card' key={index}>
+            <div className='prestations-icon'>
             </div>
-            <img src={service.image} alt={service.title} className='service-image' />
-            <h2 className='service-title'>{service.title}</h2>
-            <p className='service-description'>{service.description}</p>
+            <img src={service.image} alt={service.title} className='prestations-image' />
+            <h2 className='prestations-title'>{service.title}</h2>
+            <p className='prestations-description'>{service.description}</p>
           </div>
         ))}
       </div>
