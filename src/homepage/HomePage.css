@@ -286,3 +286,12 @@ body, html {
     margin-top: 70px; /* Reduce top margin */
   }
 }
+
+.no-underline {
+  color: white;
+  text-decoration: none;
+}
+
+.no-underline:visited {
+  color: white;
+}

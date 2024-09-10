@@ -44,7 +44,7 @@ const HomePage = () => {
           productions dans plusieurs secteurs d'activités, têtus lorsqu'il <br/>
           s'agit d'accomplir une mission.
         </p>
-        <button className="learn-more-button"><span>En savoir plus</span>  <i className="Arrowicon fa-solid fa-angle-right"></i></button><br/><br/><br/>
+        <button className="learn-more-button"><span><a href='https://www.tasmimweb.com/tasmim-web-agence-web-casablanca-maroc/' className="no-underline">En savoir plus</a></span>  <i className="Arrowicon fa-solid fa-angle-right"></i></button><br/><br/><br/>
         <div className="nav-container">
           <button className="nav-btn">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" className='Icon'>

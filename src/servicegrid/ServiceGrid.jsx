@@ -26,7 +26,6 @@ function ServicesGrid() {
           className="service-item" 
           style={{ backgroundImage: service.backgroundImage }}
         >
-          <span className="icon">{service.icon}</span>
           <h3>{service.title}</h3>
         </div>
       ))}

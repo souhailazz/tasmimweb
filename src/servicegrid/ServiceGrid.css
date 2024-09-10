@@ -1,13 +1,15 @@
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr); /* Ensure three columns */
+  gap: 20px; /* Space between items */
   max-width: 900px;
   
   margin: 40px auto; 
 }
 
 .service-item {
+  background-size: cover; /* Ensure background image covers the item */
+  height: 200px; /* Set a fixed height for uniformity */
   background-color: rgba(255, 255, 255, 0.015); 
   padding: 40px;
   padding-top: 90px;
@@ -15,18 +17,14 @@
   font-weight: bold;
   border-radius: 10px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
-  color: #ffffff;
-  background-size: cover;  
-  background-position: center;  
+  color: white; /* Text color */
+  text-align: center; /* Center text */
   transition: transform 0.3s ease;
   fill: #010101; 
   cursor: pointer;
 }
-
 
 .service-item:hover {
   transform: scale(1.05);

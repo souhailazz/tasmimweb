@@ -12,6 +12,11 @@
   padding: 100px 20px;
 }
 
+.agence-hero-content {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+}
+
 .agence-hero-content h1 {
   font-size: clamp(32px, 5vw, 48px);
   margin-bottom: 20px;
@@ -34,6 +39,26 @@
 
 .agence-hero-btn:hover {
   background-color: var(--primary-dark);
+}
+
+/* Update styles for the hero image and text description */
+.agence-hero-content {
+    display: flex; /* Use flexbox to align items in a row */
+    align-items: center; /* Center items vertically */
+}
+
+/* Switch the order of the image and text */
+.hero-text {
+    width: 50%; /* Set the text width to 50% */
+    padding: 20px; /* Add some padding */
+    color: #333; /* Change text color for better readability */
+}
+
+.hero-image {
+    width: 50%; /* Set the image width to 50% */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 300px; /* Limit the maximum height */
+    object-fit: cover; /* Cover the area without distortion */
 }
 
 /* Services and Portfolio Sections */
@@ -223,6 +248,38 @@
   .agence-service-item, .agence-portfolio-item {
     width: auto;
     min-height: 150px;
+  }
+}
+
+/* Updated Hero Title, Subtitle, and Description Styles */
+.hero-title {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    color: white; /* Change to desired color */
+}
+
+.hero-subtitle {
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold; /* Make it bold */
+    color: white; /* Change to desired color */
+}
+
+.hero-description {
+    font-size: 1.2rem; /* Adjust size as needed */
+    color: white; /* Change to desired color */
+    line-height: 1.5; /* Adjust line height for readability */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
